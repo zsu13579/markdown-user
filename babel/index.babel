@@ -1,0 +1,23 @@
+
+var MarkDown=React.createClass({
+  
+  getInitialState: function(){
+    return {value: 'Hello'}; 
+  },
+  
+  handleChange: function(event){
+    this.setState({value: marked(event.target.value)});
+  },
+  render: function(){
+    var value=this.state.value;
+    return (
+      <div><textarea onChange={this.handleChange}></textarea><div id="preview" dangerouslySetInnerHTML={{__html: value}}></div></div>
+    )
+  }
+  
+});
+
+  ReactDOM.render(<MarkDown/>,document.getElementById('mainContainer'))
+
+
+

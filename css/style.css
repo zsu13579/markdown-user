@@ -1,0 +1,12 @@
+textarea{
+  width:  580px;
+  height:  500px;
+  margin-left:  160px;
+  margin-top:  50px;
+  position:  absolute;
+}
+
+#preview{
+  position:  absolute;
+  margin-left:  800px;
+}
